@@ -1,0 +1,56 @@
+.header {
+  padding: 10px 10%;
+  background-color: #1a242e;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo > .logo {
+  margin-left: -80px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  color: #d3d7da;
+  font-weight: 600;
+}
+.header__menu > p {
+  padding: 8px;
+  margin-left: 15px;
+}
+.header__menu > p:hover {
+  transition: 0.3s all ease-in;
+  color: white;
+  cursor: pointer;
+}
+.header__right {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+  margin-right: -70px;
+}
+
+.header__right > .header__input > input {
+  background-color: #1a242e;
+  padding: 10px 30px;
+  border: 3px solid grey;
+}
+.header__input > {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.search {
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.avatar {
+  margin-left: 10px;
+}

@@ -1,0 +1,18 @@
+.home__info {
+  height: 1500px;
+  background-color: #1a242e;
+}
+.home__info > p {
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.home {
+  padding: 30px 0px;
+  background-color: #1a242e;
+}
+.home__row1 > img {
+  width: 240px;
+}
