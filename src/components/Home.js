@@ -26,7 +26,7 @@ function Home() {
                 </div>
             </Carousel>
             <div className="home__info">
-                <p>watch next Tv and Movies</p>
+                <p>Weekly Trending movies</p>
                  <div className="home__row1">
                      <Results/>
 

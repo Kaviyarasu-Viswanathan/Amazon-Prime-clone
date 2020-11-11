@@ -2,8 +2,10 @@ import React from 'react'
 import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import { Avatar } from '@material-ui/core';
+import requests from '../axios/requests';
 
-function Header() {
+
+function Header({setSelectedOption}) {
     return (
         <div className="header">
             <div className="header__left">
@@ -15,10 +17,10 @@ function Header() {
                  className="logo"
                  />
                  <div className="header__menu">
-                <p>Home</p>
-                <p>Tv Shows</p>
-                <p>Movies</p>
-                <p>Kids</p>
+                <p >Home</p>
+                <p onClick={() => setSelectedOption(requests.fetchTopRated)}>Tv Shows</p>
+                <p onClick={() => setSelectedOption(requests.fetchRomance)}>Movies</p>
+                <p onClick={() => setSelectedOption(requests.fetchAnimation)}>Kids</p>
                  </div>
                 
             </div>

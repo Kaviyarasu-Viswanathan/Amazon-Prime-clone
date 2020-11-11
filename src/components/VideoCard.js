@@ -1,18 +1,22 @@
 import React from 'react'
 import './VideoCard.css'
 
-/*  const baseURL= "https://m.media-amazon.com/images/"; */
+const baseURL= "https://image.tmdb.org/t/p/original";
  
 function VideoCard({movie }) {
     return (
         <div className="videoCard">
             
-            <img src={` ${movie.M || movie.Poster}`}
-            alt=""
+        
+            
+            <img src={`${baseURL}${movie.backdrop_path || movie.poster_path}`}
+            alt="movie poster"
              />
+             
              <p>{movie.Year}</p>
-             <h4>{movie.Title}</h4>
-             <p>{movie.Type}</p>
+             <h4>{movie.original_title || movie.title}</h4>
+             <p>release date: {movie.release_date}</p>
+             <p>vote count: {movie.vote_count}</p>
         </div>
     )
 }
